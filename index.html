@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex,nofollow">
@@ -8,69 +7,60 @@
     <title>NIGANG</title>
     <meta name="description" content="">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
   </head>
-
   <body>
 
-    <!--HEADER-->
+    <!--HEADER(PC)-->
+
     <header id="navigation">
 
-      <div class="navigationLeft">
-        <img src="" alt="" class="humberger"><a href="#"><img src="" alt="" class="headerLogo"></a>
+      <div class="left">
+        <a href="#"><img src="img/Logo.png" alt="logo"></a>
+      </div>
 
-        <ul class="navigationItems">
-          <li class="headerNavigation"><a href=".sec01">Movie Income</a></li>
-          <li class="headerNavigation">Thai & Japanese Theater
+      <div class="right">
+        <ul class="navMaster">
+          <li class="nav"><a href="#" class="oneDown">Movie Income</a></li>
+          <li class="nav hover"><a href="#" class="oneDown">Thai & Japanese Theater</a>
             <ul>
-              <li><a href=".sec02">Ticket</a></li>
-              <li><a href=".sec03">Popcorn Price</a></li>
-              <li><a href=".sec04">Seat</a></li>
+              <li class="hoverChild"><a href="#" class="childlen">Ticket</a></li>
+              <li class="hoverChild"><a href="#" class="childlen">Popcorn Price</a></li>
+              <li class="hoverChild"><a href="#" class="childlen">Seat</a></li>
             </ul>
           </li>
-          <li class="headerNavigation"><a href=".sec05">About</a></li>
-        </ul>
-      </div>
-
-      <div class="navigationRight">
-        <p>langage</p>
-        <ul>
-          <li><a href="#"><img src="" alt=""></a></li>
-          <li><a href="#"><img src="" alt=""></a></li>
-          <li><a href="#"><img src="" alt=""></a></li>
+          <li class="nav"><a href="#" class="oneDown">About</a></li>
+          <li class="nav lang">
+            <ul>
+              <li><a href="#"><img src="img/uk.png" alt=""></a></li>
+              <li><a href="#"><img src="img/th.png" alt=""></a></li>
+              <li><a href="#"><img src="img/jp.png" alt=""></a></li>
+            </ul>
+          </li>
         </ul>
       </div>
 
     </header>
 
-    <header id="articleOfTitle">
-      <img src="" alt="logo">
 
-      <section>
-        <h1>NIGANG</h1>
-        <p></p>
-      </section>
-    </header>
+    <!--SCRIPT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        var header = ('#navigation');
 
-    <div class="sec01 movieIncome">
-      <h1>Movie Income</h1>
-    </div>
+        $(header).hide();
 
-    <div class="sec02 ticket">
-      <h1>Ticket</h1>
-    </div>
-
-    <div class="sec03 popcornPrice">
-      <h1>Popcorn Price</h1>
-    </div>
-
-    <div class="sec04 seat">
-      <h1>Seat</h1>
-    </div>
-
-    <div class="sec05 about">
-      <h1>about</h1>
-    </div>
-
+        $(window).scroll(function(){
+          if($(this).scrollTop() > 500){
+            $(header).slideDown();
+          }else{
+            $(header).slideUp();
+          }
+        });
+      });
+    </script>
   </body>
-
 </html>

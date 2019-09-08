@@ -1,0 +1,125 @@
+@charset "UTF-8";
+html{
+  font-family: 'Catamaran', sans-serif;
+  height: 3000px;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/*HEADER*/
+
+#navigation{
+  height: 53px;
+  width: 100%;
+  position: fixed;
+}
+
+  /*LEFT*/
+
+  .left{
+    float: left;
+  }
+
+  .left img{
+    height: 50px;
+    width: auto;
+  }
+
+  /*RIGHT*/
+
+  .right{
+    float: right;
+    white-space: nowrap;
+  }
+
+  .right img{
+    height: 20px;
+    width: auto;
+  }
+
+  .right .navMaster{
+    display: flex;
+  }
+
+  .right .navMaster .nav{
+    width: 170px;
+    height: 50px;
+    position: relative;
+    background-color: white;
+    transition-duration: .5s;
+  }
+
+  .right .navMaster .nav:hover:not(.lang){
+    background-color: #8D99AD;
+  }
+
+  .right .nav .oneDown{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+    /*HOVER MENU*/
+
+    .right .hover{
+      position: relative;
+    }
+
+    .right .hover ul{
+      display: block;
+      position: absolute;
+      top: 40%;
+      visibility: hidden;
+      transition: all .3s ease;
+      opacity: 0;
+    }
+
+    .right .hover:hover ul{
+      visibility: visible;
+      top: 100%;
+      opacity: 1;
+    }
+
+    .right .hover .hoverChild{
+      height: 50px;
+      width: 170px;
+      position: relative;
+      background-color: #EEF2F4;
+      transition-duration: .5s;
+    }
+
+    .right .hover .hoverChild:hover{
+      background-color: #8D99AD;
+    }
+
+    .right .hover .hoverChild .childlen{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    /*LANG MENU*/
+
+    .right .lang{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right .lang ul{
+      display: flex;
+      width: 170px;
+    }
+
+    .right .lang li{
+      margin: 0 auto;
+    }
