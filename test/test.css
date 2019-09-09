@@ -15,9 +15,10 @@ body{
 .container .box{
     text-align: center;
 }
-.container .box .icon .fas{
-    font-size: calc(100vw / 20);
+.container .box .icon .left{
+    font-size: calc(100vw / 30);
     cursor: pointer;
+    margin-right: 10px;
 }
 .container .box .icon h3,
 .container .box .icon h4{
@@ -30,8 +31,8 @@ body{
     transition-delay: 0.3333s;
     color: transparent;
 }
-.container .box .fas:hover ~ .right h3,
-.container .box .fas:hover ~ .right h4{
+.container .box .left:hover ~ .right h3,
+.container .box .left:hover ~ .right h4{
     color: #000;
 }
 .container .box .icon h4{
@@ -55,10 +56,10 @@ body{
     right: 100%;
     background: #9c27d0;
 }
-.container .box .fas:hover ~ .right h3::before{
+.container .box .left:hover ~ .right h3::before{
     left: -100%;
 }
-.container .box .fas:hover ~ .right h4::before{
+.container .box .left:hover ~ .right h4::before{
     right: -100%;
 }
 .container .box .icon{
