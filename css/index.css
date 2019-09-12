@@ -491,7 +491,7 @@ section{
 
 #ticket .ticket .box .text h1{
   font-size: calc(100vw / 50);
-  margin: 10% 0;
+  margin: 15% 0;
 }
 
 #ticket .ticket .box .text .right,
@@ -518,6 +518,8 @@ section{
   white-space: nowrap;
   color: white;
 }
+
+/*SEAT*/
 
 /*ABOUT*/
 #about
