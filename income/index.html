@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="images/Logo.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<title>NIGANGU</title>
+
+
+<link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<style>
+@font-face {
+  font-family: RSU;
+  src: url("Font/RSU_Regular.ttf");
+}
+
+div {
+  font-family: RSU;
+}
+</style>
+
+
+
+<body>
+	<header>
+		<div class="Navhead">
+			<div class="navmenu">
+			<nav class="navbar navbar-expand-lg navbar-light" id="navigation">
+
+							<img id="logo"  src="\images\Logo.png" alt="">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+							  <span class="navbar-toggler-icon">
+								  <img src="images/menu.svg" alt="">
+							  </span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNavDropdown">
+							  <ul class="navbar-nav">
+
+
+								<li class="nav-item dropdown" >
+								  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Income
+								  </a>
+								  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" href="#">Movie Income</a>
+									<a class="dropdown-item" href="#">Year</a>
+									<a class="dropdown-item" href="#">Director</a>
+									<a class="dropdown-item" href="#">Company</a>
+								  </div>
+								</li>
+								<li class="nav-item">
+										<a class="nav-link" href="#">Ticket</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Seat</a>
+								  </li>
+								  <li class="nav-item">
+									<a class="nav-link" href="#">About US</a>
+							</li>
+								<div class="menu__single language_box" id="flag">
+
+										<div class="language_item">
+										  <a href="#"><img src="./images/uk.png"></a>
+										</div>
+										<div class="language_item">
+										  <a href="#"><img src="./images/th.png"></a>
+										</div>
+										<div class="language_item">
+										  <a href="#"><img src="./images/jp.png"></a>
+										</div>
+								</div>
+
+						</div>
+
+					  </ul>
+					</div>
+				  </nav>
+	</div>
+	</header>
+
+
+<!-- Seats -->
+<section>
+<div class="CSSgal">
+	<div class="col-sm-6"></div>
+
+	<!-- Don't wrap targets in parent -->
+	<s id="s1"></s>
+	<s id="s2"></s>
+	<s id="s3"></s>
+	<s id="s4"></s>
+
+	<div class="slider">
+	  <div style="background:#021C37;" class="slider_box">
+      <div class="slider_inbox">
+        <div class="slider_inbox_left">
+          <img src="images\Movie-income-Expand-01.png" alt="">
+        </div>
+        <div class="slider_inbox_right">
+          <div class="tabs">
+            <input id="all" type="radio" name="tab_item" checked>
+            <label class="tab_item" for="all">JAPAN</label>
+            <input id="programming" type="radio" name="tab_item">
+            <label class="tab_item" for="programming">THAILAND</label>
+            <div class="tab_content" id="all_content">
+              <div class="content_inbox">
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>Spirited Away</li>
+                    <li>Your name?</li>
+                    <li>Howl's Moving Castle</li>
+                    <li>Princess Mononoke</li>
+                    <li>BAYSIDE SHAKEDOWN 2</li>
+                  </ul>
+                </div>
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>$289.8M</li>
+                    <li>$235.5M</li>
+                    <li>$184.4M</li>
+                    <li>$181.6M</li>
+                    <li>$163.3M</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab_content" id="programming_content">
+              <div class="content_inbox">
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>Bad Genius</li>
+                    <li>Pee Mak Phra Khanong</li>
+                    <li>I Fine Thank You Love You</li>
+                    <li>Suriyothai</li>
+                    <li>King Naresuan 2</li>
+                  </ul>
+                </div>
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>$45.7M</li>
+                    <li>$32.6M</li>
+                    <li>$10.7M</li>
+                    <li>$10.6M</li>
+                    <li>$7.6M</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+	  <div style="background:#2B2D42;" class="slider_box">
+      <div class="slider_inbox">
+        <div class="slider_inbox_left">
+          <img src="images\Movie-income-Expand-02.png" alt="">
+        </div>
+        <div class="slider_inbox_right">
+          <div class="tabs">
+            <input id="unti" type="radio" name="unti_item" checked>
+            <label class="tab_item" for="unti">JAPAN</label>
+            <input id="tintin" type="radio" name="unti_item">
+            <label class="tab_item" for="tintin">THAILAND</label>
+            <div class="tab_content" id="unti_content">
+              <div class="content_inbox">
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>Spirited Away</li>
+                    <li>Your name?</li>
+                    <li>Howl's Moving Castle</li>
+                    <li>Princess Mononoke</li>
+                    <li>BAYSIDE SHAKEDOWN 2</li>
+                  </ul>
+                </div>
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>2001</li>
+                    <li>2016</li>
+                    <li>2004</li>
+                    <li>1997</li>
+                    <li>2003</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab_content" id="tintin_content">
+              <div class="content_inbox">
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>Bad Genius</li>
+                    <li>Pee Mak Phra Khanong</li>
+                    <li>I Fine Thank You Love You</li>
+                    <li>Suriyothai</li>
+                    <li>King Naresuan 2</li>
+                  </ul>
+                </div>
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>2017</li>
+                    <li>2013</li>
+                    <li>2014</li>
+                    <li>2001</li>
+                    <li>2007</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div style="background:#021C37;" class="slider_box">
+      <div class="slider_inbox">
+        <div class="slider_inbox_left">
+          <img src="images\Movie-income-Expand-03.png" alt="">
+        </div>
+        <div class="slider_inbox_right">
+          <div class="tabs">
+            <input id="tab003_uesama" type="radio" name="tab003_item" checked>
+            <label class="tab_item" for="tab003_uesama">JAPAN</label>
+            <input id="tab003_shitasama" type="radio" name="tab003_item">
+            <label class="tab_item" for="tab003_shitasama">THAILAND</label>
+            <div class="tab_content" id="tab003_uesama_content">
+              <div class="content_inbox">
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>Spirited Away</li>
+                    <li>Your name?</li>
+                    <li>Howl's Moving Castle</li>
+                    <li>Princess Mononoke</li>
+                    <li>BAYSIDE SHAKEDOWN 2</li>
+                  </ul>
+                </div>
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>Toho</li>
+                    <li>Toho</li>
+                    <li>Toho</li>
+                    <li>Toho</li>
+                    <li>Toho</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab_content" id="tab003_shitasama_content">
+              <div class="content_inbox">
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>Bad Genius</li>
+                    <li>Pee Mak Phra Khanong</li>
+                    <li>I Fine Thank You Love You</li>
+                    <li>Suriyothai</li>
+                    <li>King Naresuan 2</li>
+                  </ul>
+                </div>
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>GDH</li>
+                    <li>GTH</li>
+                    <li>GTH</li>
+                    <li>Sahamonkhol Film</li>
+                    <li>Sahamonkhol Film</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+    <div style="background:#2B2D42;" class="slider_box">
+      <div class="slider_inbox">
+        <div class="slider_inbox_left">
+          <img src="images\Movie-income-Expand-04.png" alt="">
+        </div>
+        <div class="slider_inbox_right">
+          <div class="tabs">
+            <input id="tab004_uesama" type="radio" name="tab004_item" checked>
+            <label class="tab_item" for="tab004_uesama">JAPAN</label>
+            <input id="tab004_shitasama" type="radio" name="tab004_item">
+            <label class="tab_item" for="tab004_shitasama">THAILAND</label>
+            <div class="tab_content" id="tab004_uesama_content">
+              <div class="content_inbox">
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>Spirited Away</li>
+                    <li>Your name?</li>
+                    <li>Howl's Moving Castle</li>
+                    <li>Princess Mononoke</li>
+                    <li>BAYSIDE SHAKEDOWN 2</li>
+                  </ul>
+                </div>
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>Miyazaki Hayao</li>
+                    <li>Makoto Shinkai</li>
+                    <li>Miyazaki Hayao</li>
+                    <li>Miyazaki Hayao</li>
+                    <li>Katsuyuki Motohiro</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab_content" id="tab004_shitasama_content">
+              <div class="content_inbox">
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>Bad Genius</li>
+                    <li>Pee Mak Phra Khanong</li>
+                    <li>I Fine Thank You Love You</li>
+                    <li>Suriyothai</li>
+                    <li>King Naresuan 2</li>
+                  </ul>
+                </div>
+                <div class="tab_inside_content">
+                  <ul>
+                    <li>Nattawut Poonpiriya</li>
+                    <li>Banjong Pisanthanakun</li>
+                    <li>Mez Tharatorn</li>
+                    <li>H.S.H. Chatrichalerm Yukol</li>
+                    <li>H.S.H. Chatrichalerm Yukol</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+  </div>
+
+	<div class="prevNext">
+	  <div><a href="#s4"></a><a href="#s2"></a></div>
+	  <div><a href="#s1"></a><a href="#s3"></a></div>
+	  <div><a href="#s2"></a><a href="#s4"></a></div>
+	  <div><a href="#s3"></a><a href="#s1"></a></div>
+	</div>
+
+	<div class="bullets">
+	  <a href="#s1">1</a>
+	  <a href="#s2">2</a>
+	  <a href="#s3">3</a>
+	  <a href="#s4">4</a>
+	</div>
+
+  </div>
+</section>
+  <!-- END Seats -->
+
+
+
+<!--footer-->
+<head>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/Footer-with-button-logo.css">
+</head>
+<body>
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-2 footer text-center">
+                    <img src="images/rmutt.svg" hspace="30" width="80">
+					<h5>Rajamangala University of Technology Thanyaburi (RMUTT)</h5>
+                </div>
+                <div class="col-sm-2 footer text-center">
+                    <img src="images/HIU.svg" hspace="30" width="80">
+					<h5>Hokkaido Information University (HIU)</h5>
+                </div>
+                <div class="col-sm-2 footer text-center">
+                    <img src="images/wdc.svg" hspace="30" width="80">
+					<h5>Web Design Contest</h5>
+				</div>
+				<div class="col-sm-2 footer text-center">
+                    <img src="images/Jasso.svg" hspace="30" width="80">
+					<h5>Japan Student Services Organization</h5>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2019 Copyright by NIGANGU </p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+<!--END footer-->
+
+
+
+
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
