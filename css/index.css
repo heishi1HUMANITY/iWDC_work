@@ -36,29 +36,39 @@ section{
 
 .dallar{
   font-family: 'Noto Sans', sans-serif;
-  font-size: calc(100vw / 55);
+  font-size: calc(100vw / 60);
+}
+
+#ticket .dallar:not(.without_dallar){
+  font-size: calc(100vw/90);
 }
 
 /*HEADER*/
 
 #navigation{
-  height: 50px;
+  height: 8vh;
   width: 100%;
   position: fixed;
   background-color: black;
   padding-left: 10px;
   line-height: 0;
   z-index: 9999;
+  top: 0;
+}
+
+#navigation_hum{
+  display: none;
 }
 
   /*LEFT*/
 
   .left{
     float: left;
+    height: 100%
   }
 
   .left img{
-    height: 50px;
+    height: 100%;
     width: auto;
   }
 
@@ -67,6 +77,8 @@ section{
   .right{
     float: right;
     white-space: nowrap;
+    height: 100%;
+    width: 80%;
   }
 
   .right img{
@@ -76,11 +88,14 @@ section{
 
   .right .navMaster{
     display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
   }
 
   .right .navMaster .nav{
-    width: 170px;
-    height: 50px;
+    width: 10%;
+    height: 100%;
     position: relative;
     background-color: black;
     transition-duration: .5s;
@@ -90,8 +105,8 @@ section{
     color: white;
   }
 
-  .right .navMaster .nav:hover:not(.lang){
-    background-color: #8D99AD;
+  .right .navMaster .nav:hover:not(.lang) .oneDown{
+    color: red;
   }
 
   .right .nav .oneDown{
@@ -114,6 +129,7 @@ section{
       visibility: hidden;
       transition: all .3s ease;
       opacity: 0;
+      width: 100%;
     }
 
     .right .hover:hover ul{
@@ -123,15 +139,16 @@ section{
     }
 
     .right .hover .hoverChild{
-      height: 50px;
-      width: 170px;
+      height: 8vh;
+      width: 100%;
       position: relative;
       background-color: black;
       transition-duration: .5s;
+      color: white;
     }
 
-    .right .hover .hoverChild:hover{
-      background-color: #8D99AD;
+    .right .hover .hoverChild:hover a{
+      color: red;
     }
 
     .right .hover .hoverChild .childlen{
@@ -158,6 +175,41 @@ section{
     .right .lang li{
       margin: 0 auto;
     }
+
+@media screen and (max-width: 910px){
+  #navigation{
+    display: none;
+  }
+
+  #navigation_hum{
+    display: block;
+    height: 8vh;
+    width: 100%;
+    background-color: black;
+    padding-left: 10px;
+    line-height: 0;
+    z-index: 9999;
+  }
+
+  #navigation_hum img{
+    height: 100%;
+  }
+
+  .header_hum_content{
+    width: 100%;
+    height: 0;
+    transition: .5s;
+    color: white;
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+  }
+
+  #header_hum_radio:checked ~ #navigation_hum{
+    height: 10vh;
+  }
+
+}
 
 /*TOP*/
 #top{
@@ -219,12 +271,12 @@ section{
     width: 50%;
     height: 30%;
     line-height: 1.5;
-    font-size: calc(100vw / 40);
+    font-size: calc(100vw / 60);
 }
 #logo .logo_content{
     position: absolute;
     left: 4%;
-    top: 42%;
+    top: 45%;
 }
 
 /*INCOME*/
@@ -684,52 +736,58 @@ input[type="radio"] {
 /*SEAT*/
 #seat{
     position: relative;
+    width: 100vw;
 }
 
-#seat article{
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
+#seat_article{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100vw;
+  height: 100%;
+  display: flex;
 }
 
-#seat article .seat_left{
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+#seat_article .seat_left{
+  width: 60%;
+  position: relative;
 }
 
-#seat article .seat_left .seat_left_article{
-    width: 27%;
+#seat_article .seat_left img{
+  width: 50vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
-#seat article .seat_left ul{
-    background-color: white;
-    opacity: 0.7;
+#seat_article .seat_left .seat_inside_article{
+  display: flex;
+  position: absolute;
+  top: 44%;
+  left: 35%;
+  width: 54%;
 }
 
-#seat article .seat_left li{
-    font-size: calc(100vw / 50);
-    white-space: nowrap;
-    font-weight: 600;
-    line-height: 2;
-    border-right: 0.2vw solid ;
+#seat_article .seat_left .seat_inside_article .seat_article_box{
+  line-height: 2.3;
+  font-size: calc(100vw / 50);
+  text-align: center;
+  width: 50%;
 }
 
-#seat article .seat_left li:first-child{
-    border-bottom: 0.2vw solid ;
+#seat_article .seat_right{
+  width: 40%;
+  position: relative;
 }
 
-#seat article .seat_right{
-    width: 40%;
-}
-
-#seat article .seat_right img{
-    width: 90%;
+#seat_article .seat_right img{
+  width: 30vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 /*ABOUT*/
@@ -764,32 +822,43 @@ input[type="radio"] {
 
 #about h1{
   position: absolute;
-  top: 80%;
+  top: 0%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,20%);
   font-size: calc(100vw / 40);
   line-height: 1;
   text-align: center;
+  color: white;
+  transition: 1s;
 }
+
+.addclass{
+  line-height: 2;
+}
+
 #about .screen:nth-child(1){
     background: url("../img/member1.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100%;
 }
 #about .screen:nth-child(2){
     background: url("../img/member2.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100%;
 }
 #about .screen:nth-child(3){
     background: url("../img/member3.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100%;
 }
 #about .screen:nth-child(4){
     background: url("../img/member4.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 100%;
 }
 #about .screen .content{
     position: absolute;
@@ -803,6 +872,7 @@ input[type="radio"] {
     transform: translate(-50%,-50%);
     transition: 0.5s;
     text-align: center;
+    z-index: 2;
 }
 #about .screen:hover{
   background-size: 80%;
@@ -813,6 +883,14 @@ input[type="radio"] {
     left: 50%;
     transform: translate(-50%,-50%);
     transition-delay: 0.5s;
+}
+#about .screen:hover h1{
+  z-index: 20;
+  color: black;
+  top: 37%;
+}
+#about .screen:hover .moredown{
+  top: 40%;
 }
 #about .screen .content h2{
     margin: 0;
@@ -838,6 +916,9 @@ input[type="radio"] {
   left: 50%;
   transform: translate(-50%,-50%);
 }
+#about .screen .content .about_box_top{
+  margin-top: 40%;
+}
 .content .box .icon h3,
 .content .box .icon h4{
     position: relative;
@@ -853,6 +934,9 @@ input[type="radio"] {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.content .box .icon h3{
+  font-size: calc(100vw/100);
 }
 .content .box .left:hover ~ .right h3,
 .content .box .left:hover ~ .right h4{
@@ -870,13 +954,13 @@ input[type="radio"] {
     left: 110%;
     width: 100%;
     height: 100%;
-    background-color: #00bcd4;
+    background-color: #ed1f26;
     transition: 1s;
 }
 .content .box .icon .right h4::before{
     left: initial;
     right: 110%;
-    background: #9c27d0;
+    background: #2b2d42;
 }
 .content .box .left:hover ~ .right h3::before{
     left: -110%;
@@ -902,6 +986,17 @@ input[type="radio"] {
 .content .box .icon .right{
   width: 80%;
   height: 100%;
+}
+
+.fas{
+  position: relative;
+}
+
+.fas:before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 /*footer*/
@@ -948,5 +1043,126 @@ footer .footer_bottom{
   font-size: 1vw;
   text-align: center;
   background: #032038;
+  color: white;
+}
+
+/*ticket*/
+
+#ticket{
+  position: relative;
+}
+
+#ticket p{
+  white-space: normal;
+  font-weight: 1000;
+}
+
+#ticket .head{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: calc(100vw / 30);
+  color: white;
+  font-family: 'Catamaran'
+}
+
+#ticket .ticket{
+  display: flex;
+  width: 100%;
+  padding: 0 5px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  line-height: 1;
+  color: black;
+
+}
+
+#ticket .ticket .box{
+  margin: 0 auto;
+  transition: 1s;
+  position: relative;
+
+}
+
+#ticket .ticket .box:hover{
+  transform: scale(1.125);
+}
+
+#ticket .ticket .box .text{
+  width: 100%;
+  height: 37.5%;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#ticket .ticket .box .text{
+  font-size: calc(100vw / 60);
+  /* font-weight: bold; */
+  display: flex;
+}
+
+#ticket .ticket .box .text2{
+  width: 100%;
+  height: 37.5%;
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#ticket .ticket .box .text2{
+  font-size: calc(100vw / 60);
+  /* font-weight: bold; */
+  display: flex;
+}
+
+
+#ticket .ticket .box .text .text_mini{
+  font-size: calc(100vw / 90);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#ticket .ticket .box .text2 .text_mini{
+  font-size: calc(100vw / 90);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#ticket .ticket .box .text .right,
+#ticket .ticket .box .text .left{
+  box-sizing:  border-box;
+  margin: 0 auto;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+}
+
+#ticket .ticket .box .text2 .right,
+#ticket .ticket .box .text2 .left{
+  box-sizing:  border-box;
+  margin: 5% auto;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+}
+
+
+#ticket .ticket img{
+  width: 18vw;
+  margin: 0 auto;
+}
+
+#ticket .ticket .foot{
+  position: absolute;
+  top: 79%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: calc(100vw / 50);
+  white-space: nowrap;
   color: white;
 }

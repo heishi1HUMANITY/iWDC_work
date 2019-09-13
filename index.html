@@ -22,6 +22,48 @@
 
     <!--HEADER(PC)-->
 
+    <header id="navigation">
+
+      <div class="left">
+        <a href="#"><img src="img/Logo.png" alt="logo"></a>
+      </div>
+
+      <div class="right">
+        <ul class="navMaster">
+          <li class="nav hover"><a href="#" class="oneDown">INCOME</a>
+            <ul>
+              <li class="hoverChild"><a href="#" class="childlen">YEAR</a></li>
+              <li class="hoverChild"><a href="#" class="childlen">DIRECTOR</a></li>
+              <li class="hoverChild"><a href="#" class="childlen">COMPANY</a></li>
+            </ul>
+          </li>
+          <li class="nav"><a href="#ticket" class="oneDown">TICKET</a></li>
+          <li class="nav"><a href="#seat" class="oneDown">SEAT</a></li>
+          <li class="nav"><a href="#about" class="oneDown">ABOUT US</a></li>
+          <li class="nav lang">
+            <ul>
+              <li><a href="#"><img src="img/uk.png" alt=""></a></li>
+              <li><a href="#"><img src="img/th.png" alt=""></a></li>
+              <li><a href="#"><img src="img/jp.png" alt=""></a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </header>
+
+    <header id="navigation_hum">
+      <input type="checkbox" name="header_hum" id="header_hum_radio"><label for="header_hum_radio" class="header_radio"><img src="img/menu.svg" alt=""></label>
+      <div class="header_hum_coHIUt">
+          <ul>
+            <li>INCOME</li>
+            <li>TICKET</li>
+            <li>SEAT</li>
+            <li>ABOUT US</li>
+          </ul>
+      </div>
+    </header>
+
     <section id="top">
         <img src="img/01.png" alt="top" class="bg">
         <h1>
@@ -32,8 +74,20 @@
     <section id="logo">
         <img src="img/02.png" alt="income" class="bg">
         <p class="logo_content">
-            NIGANGU is coined word made from Thai NANG and Japanese EIGA mean “movie”.Movies is necessary entertainment for our life and culture.<br>
-            But it have BIG difference between Thai and Japanese especially fee.Currently, we compared and put together about difference of movie in this website.We hope you enjoy it...
+          NIGANGU is coined word made from Thai NANG and Japanese EIGA mean “movie”.
+  					<br>
+  					Also, GANGU means toy in Japanese.
+  					<br>
+  					<br>
+  					Movies is necessary entertainment for our life and culture.
+  					<br>
+  					<br>
+  					But it have BIG difference between Thai and Japanese especially fee.
+  					We compared and put together about difference of movie in this website.
+  					<br>
+  					<br>
+  					We hope you enjoy it...
+
         </p>
     </section>
 
@@ -70,7 +124,7 @@
             <div class="info">
               <div class="infoboxtop">
                 <div class="incomebox">
-                  <a href="#" class="con-btn2">more info</a>
+                  <a href="#article_year" class="con-btn2">more info</a>
                 </div>
               </div>
             </div>
@@ -87,7 +141,7 @@
             <div class="info">
               <div class="infoboxtop">
                 <div class="incomebox">
-                  <a href="#" class="con-btn">more info</a>
+                  <a href="#article_director" class="con-btn">more info</a>
                 </div>
               </div>
             </div>
@@ -104,7 +158,7 @@
             <div class="info">
               <div class="infoboxtop">
                 <div class="incomebox">
-                  <a href="#" class="con-btn2">more info</a>
+                  <a href="#article_company" class="con-btn2">more info</a>
                 </div>
               </div>
             </div>
@@ -118,7 +172,7 @@
 
     <section id="income_article">
         <ul class="slider">
-            <li>
+            <li id="article_income">
 
                 <div class="slider_inbox">
                     <div class="left">
@@ -186,7 +240,7 @@
 
             </li>
 
-            <li>
+            <li id="article_year">
 
                 <div class="slider_inbox">
                     <div class="left">
@@ -254,7 +308,7 @@
 
             </li>
 
-            <li>
+            <li id="article_director">
 
                 <div class="slider_inbox">
                     <div class="left">
@@ -322,7 +376,7 @@
 
             </li>
 
-            <li>
+            <li id="article_company">
 
                 <div class="slider_inbox">
                     <div class="left">
@@ -393,114 +447,138 @@
     </section>
 
     <section id="ticket">
-      <img src="img/ticket-bg.jpg" alt="ticket-bg" class="bg">
-      <h1 class="head">Ticket</h1>
-      <article class="ticket">
-        <div class="box">
-          <img src="img/ticket1.png" alt="ticket1">
-          <div class="text">
-            <div class="left">
-              <h1>Japan</h1>
-              <p>$16.84</p>
-            </div>
-            <div class="right">
-              <h1>Thailand</h1>
-              <p>$3.09</p>
-            </div>
-          </div>
-          <h1 class="foot">Ticket Price</h1>
-        </div>
-        <div class="box">
-          <img src="img/ticket2.png" alt="ticket2">
-          <div class="text">
-            <div class="left">
-              <h1>Japan</h1>
-              <p>$1.80</p>
-            </div>
-            <div class="right">
-              <h1>Thailand</h1>
-              <p>$6.53</p>
-            </div>
-          </div>
-          <h1 class="foot">Hamburger Price</h1>
-        </div>
-        <div class="box">
-          <img src="img/ticket3.png" alt="ticket3">
-          <div class="text">
-            <div class="left">
-              <h1>Japan</h1>
-            </div>
-            <div class="right">
-              <h1>Thailand</h1>
-            </div>
-          </div>
-          <h1 class="foot">Discount</h1>
-        </div>
-      </article>
-    </section>
+  		<img src="img/ticket-bg.jpg" alt="ticket-bg" class="bg">
+  		<h1 class="head">Ticket</h1>
+  		<article class="ticket">
+  			<div class="box">
+  				<img src="img/ticket1.png" alt="ticket1">
+  				<div class="text">
+  					<div class="left">
+  						<p><span class="dallar without_dallar">$</span>16.84</p>
+  					</div>
+  					<div class="right">
+  						<p><span class="dallar without_dallar">$</span>3.09</p>
+  					</div>
+  				</div>
+  				<div class="text2">
+  					<div class="left">
+  						<p class="text_mini">
+  							Price for 9 most popular hamburgers.
+  						</p>
+  					</div>
+  					<div class="right">
+  						<p class="text_mini">
+  							price for only 0.47 hamburgers.
+  						</p>
+  					</div>
+  				</div>
+  				<h1 class="foot">Ticket Price</h1>
+  			</div>
+
+  			<div class="box">
+  				<img src="img/ticket2.png" alt="ticket3">
+  				<div class="text">
+  					<div class="left">
+  						<p class="text_mini">
+  							Movie day<br><span class="dallar">$</span>9.24
+  						</p>
+  					</div>
+  					<div class="right">
+  						<p class="text_mini">
+  							Wednessday<br><span class="dallar">$</span>3.29
+  						</p>
+  					</div>
+  				</div>
+  				<div class="text2">
+  					<div class="left">
+  						<p class="text_mini">
+  							1st day of every month <span class="dallar">$</span>11.10
+  						</p>
+  					</div>
+  					<div class="right">
+  						<p class="text_mini">
+  							Mother day, mother is free!
+  						</p>
+  					</div>
+  				</div>
+  				<h1 class="foot">Discount</h1>
+  			</div>
+  			<div class="box">
+  				<img src="img/ticket3.png" alt="ticket3">
+  				<div class="text">
+  					<div class="left">
+  						<p class="text_mini">
+  							Student register for membership.
+  						</p>
+  					</div>
+  					<div class="right">
+  						<p class="text_mini">
+  							Student show student ID card.<br>
+  						</p>
+  					</div>
+  				</div>
+  				<div class="text2">
+  					<div class="left">
+  						<p class="text_mini">
+  							<span class="dallar">$</span>9.24-<span class="dallar">$</span>13.86
+  						</p>
+  					</div>
+  					<div class="right">
+  						<p class="text_mini">
+  							<span class="dallar">$</span>5.91
+  						</p>
+  					</div>
+  				</div>
+  				<h1 class="foot">Students Discount</h1>
+  			</div>
+  		  </article>
+  	</section>
 
     <section id="seat">
       <img src="img/seats-bg.jpg" alt="" class="bg">
       <h1 class="head">Seat</h1>
-      <article>
-          <div class="seat_left">
-              <div class="seat_left_article">
-                  <ul>
-                      <li>KIND OF SEATS</li>
-                      <li>Normal seat</li>
-                      <li>Premium seat</li>
-                      <li>Honeymoon seat</li>
-                      <li>Bed</li>
-                  </ul>
-              </div>
-              <div class="seat_left_article">
-                  <ul>
-                      <li>Japan</li>
-                      <li><span class="dallar">$</span>16.36</li>
-                      <li><span class="dallar">$</span>45.45</li>
-                      <li><span class="dallar">$</span>272.72</li>
-                      <li><span class="dallar">$</span>272.72</li>
-                  </ul>
-              </div>
-              <div class="seat_left_article">
-                  <ul>
-                      <li>Thailand</li>
-                      <li><span class="dallar">$</span>6.66</li>
-                      <li><span class="dallar">$</span>12.66</li>
-                      <li><span class="dallar">$</span>43.33</li>
-                      <li><span class="dallar">$</span>80.00</li>
-                  </ul>
-              </div>
+      <div id="seat_article">
+        <div class="seat_left">
+          <img src="img/ticket-page.png" alt="">
+          <div class="seat_inside_article">
+            <div class="seat_article_box">
+              <ul>
+                <li><span class="dallar">$</span>16.36</li>
+                <li><span class="dallar">$</span>45.45</li>
+                <li><span class="dallar">$</span>272.72</li>
+                <li><span class="dallar">$</span>272.72</li>
+              </ul>
+            </div>
+            <div class="seat_article_box">
+              <ul>
+                <li><span class="dallar">$</span>6.66</li>
+                <li><span class="dallar">$</span>12.66</li>
+                <li><span class="dallar">$</span>43.33</li>
+                <li><span class="dallar">$</span>80.00</li>
+              </ul>
+            </div>
           </div>
-          <div class="seat_right">
-              <img src="img/seats.png" alt="">
-          </div>
-      </article>
+        </div>
+        <div class="seat_right">
+          <img src="img/seats.png" alt="">
+        </div>
+      </div>
     </section>
 
     <section id="about">
 
       <div class="screen">
-        <h1>Yuki Sakashita</h1>
+        <h1 class="moredown">Yuki Sakashita</h1>
         <div class="content">
           <div class="small-img first">
             <img src="img/member1.jpg" alt="">
           </div>
-          <div class="box">
-              <div class="icon">
-                  <i class="fas fa-user-circle left"></i>
-                  <div class="right">
-                    <h4>facebook</h4>
-                    <h3>hoge</h3>
-                  </div>
-              </div>
-          </div>
-          <div class="box">
+          <div class="box about_box_top">
               <div class="icon">
                   <i class="fas fa-graduation-cap left"></i>
                   <div class="right">
                     <h4>University</h4>
-                    <h3>hoge</h3>
+                    <h3>HIU</h3>
                   </div>
               </div>
           </div>
@@ -509,7 +587,7 @@
                   <i class="fas fa-envelope left"></i>
                   <div class="right">
                     <h4>Email</h4>
-                    <h3>hoge</h3>
+                    <h3>s1811010@s.do-johodai.ac.jp</h3>
                   </div>
               </div>
           </div>
@@ -517,26 +595,17 @@
       </div>
 
       <div class="screen">
-        <h1>Siwakorn Rassamee</h1>
+        <h1 class="moredown">Siwakorn Rassamee</h1>
         <div class="content">
           <div class="small-img first">
             <img src="img/member2.jpg" alt="">
           </div>
-          <div class="box">
-              <div class="icon">
-                  <i class="fas fa-user-circle left"></i>
-                  <div class="right">
-                    <h4>facebook</h4>
-                    <h3>hoge</h3>
-                  </div>
-              </div>
-          </div>
-          <div class="box">
+          <div class="box about_box_top">
               <div class="icon">
                   <i class="fas fa-graduation-cap left"></i>
                   <div class="right">
                     <h4>University</h4>
-                    <h3>hoge</h3>
+                    <h3>RMUTT</h3>
                   </div>
               </div>
           </div>
@@ -545,7 +614,7 @@
                   <i class="fas fa-envelope left"></i>
                   <div class="right">
                     <h4>Email</h4>
-                    <h3>hoge</h3>
+                    <h3>siwakorn.rassamee@gmail.com</h3>
                   </div>
               </div>
           </div>
@@ -558,21 +627,12 @@
           <div class="small-img first">
             <img src="img/member3.jpg" alt="">
           </div>
-          <div class="box">
-              <div class="icon">
-                  <i class="fas fa-user-circle left"></i>
-                  <div class="right">
-                    <h4>facebook</h4>
-                    <h3>hoge</h3>
-                  </div>
-              </div>
-          </div>
-          <div class="box">
+          <div class="box about_box_top">
               <div class="icon">
                   <i class="fas fa-graduation-cap left"></i>
                   <div class="right">
                     <h4>University</h4>
-                    <h3>hoge</h3>
+                    <h3>RMUTT</h3>
                   </div>
               </div>
           </div>
@@ -581,7 +641,7 @@
                   <i class="fas fa-envelope left"></i>
                   <div class="right">
                     <h4>Email</h4>
-                    <h3>hoge</h3>
+                    <h3>Akkaravin.sriumphan@gmail.com</h3>
                   </div>
               </div>
           </div>
@@ -589,26 +649,17 @@
       </div>
 
       <div class="screen">
-        <h1>Yuta Onishi</h1>
+        <h1 class="moredown">Yuta Onishi</h1>
         <div class="content">
           <div class="small-img first">
             <img src="img/member4.jpg" alt="">
           </div>
-          <div class="box">
-              <div class="icon">
-                  <i class="fas fa-user-circle left"></i>
-                  <div class="right">
-                    <h4>facebook</h4>
-                    <h3>hoge</h3>
-                  </div>
-              </div>
-          </div>
-          <div class="box">
+          <div class="box about_box_top">
               <div class="icon">
                   <i class="fas fa-graduation-cap left"></i>
                   <div class="right">
                     <h4>University</h4>
-                    <h3>hoge</h3>
+                    <h3>HIU</h3>
                   </div>
               </div>
           </div>
@@ -617,7 +668,7 @@
                   <i class="fas fa-envelope left"></i>
                   <div class="right">
                     <h4>Email</h4>
-                    <h3>hoge</h3>
+                    <h3>s1821094@s.do-johodai@ac.jp</h3>
                   </div>
               </div>
           </div>
@@ -664,6 +715,20 @@
             infinite: false
         });
     </script>
+
+    <script type="text/javascript">
+      $(function(){
+          var header = ('#navigation');
+        $(header).hide();
+        $(window).scroll(function(){
+           if($(this).scrollTop() > 300){
+             $(header).slideDown();
+           }else{
+             $(header).slideUp();
+           }
+         });
+     });
+     </script>
 
   </body>
 </html>
