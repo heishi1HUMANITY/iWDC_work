@@ -103,6 +103,7 @@ section{
 
   .right .navMaster .nav a{
     color: white;
+    font-size: 1vw;
   }
 
   .right .navMaster .nav:hover:not(.lang) .oneDown{
@@ -169,11 +170,18 @@ section{
 
     .right .lang ul{
       display: flex;
-      width: 170px;
+      width: 90%;
+      justify-content: space-between;
     }
 
     .right .lang li{
       margin: 0 auto;
+      width: 25%;
+    }
+
+    .right .lang img{
+        width: 100%;
+        height: auto;
     }
 
 @media screen and (max-width: 910px){
@@ -185,6 +193,10 @@ section{
     display: none;
   }
 
+   #navigation .left{
+       display: none;
+   }
+
   #navigation_hum{
     display: block;
     height: 8vh;
@@ -193,6 +205,7 @@ section{
     line-height: 0;
     z-index: 9999;
     position: fixed;
+    max-height: 50px;
   }
 
   #navigation_hum img{
@@ -747,7 +760,7 @@ input[type="radio"] {
 #about
 {
     position: relative;
-    height: 100vh;
+    height: calc(80vw * 0.5625);
     display: flex;
     background: #000;
 }
