@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
   <head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex,nofollow">
@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css">
     <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -19,7 +20,11 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1/slick/slick.min.js"></script>
   </head>
   <body>
-
+    <style rel="stylesheet" type="text/css">
+      body{
+        font-family: 'Kanit', sans-serif;
+      }
+    </style>
     <!--HEADER(PC)-->
 
     <header id="navigation">
@@ -30,16 +35,16 @@
 
       <div class="right">
         <ul class="navMaster">
-          <li class="nav hover"><a href="#article_income" class="oneDown">INCOME</a>
+          <li class="nav hover"><a href="#article_income" class="oneDown">รายได้หนัง</a>
             <ul>
-              <li class="hoverChild"><a href="#article_year" class="childlen">YEAR</a></li>
-              <li class="hoverChild"><a href="#article_director" class="childlen">DIRECTOR</a></li>
-              <li class="hoverChild"><a href="#article_company" class="childlen">COMPANY</a></li>
+              <li class="hoverChild"><a href="#article_year" class="childlen">ปีที่ฉาย</a></li>
+              <li class="hoverChild"><a href="#article_director" class="childlen">ผู้กำกับ</a></li>
+              <li class="hoverChild"><a href="#article_company" class="childlen">บริษัทผู้ผลิต</a></li>
             </ul>
           </li>
-          <li class="nav"><a href="#ticket" class="oneDown">TICKET</a></li>
-          <li class="nav"><a href="#seat" class="oneDown">SEAT</a></li>
-          <li class="nav"><a href="#about" class="oneDown">ABOUT US</a></li>
+          <li class="nav"><a href="#ticket" class="oneDown">ตั๋วชมภาพยนต์</a></li>
+          <li class="nav"><a href="#seat" class="oneDown">ประเภทที่นั่ง</a></li>
+          <li class="nav"><a href="#about" class="oneDown">เกี่ยวกับเรา</a></li>
           <li class="nav lang">
             <ul>
               <li><a href="index.html"><img src="img/uk.png" alt=""></a></li>
@@ -56,11 +61,11 @@
       <input type="checkbox" name="header_hum" id="header_hum_radio"><label for="header_hum_radio" class="header_radio"><img src="img/menu.svg" alt=""></label>
       <div class="header_hum_content">
         <ul class="navMaster">
-          <li class="nav hover"><a href="#income" class="oneDown">INCOME</a>
+          <li class="nav hover"><a href="#income" class="oneDown">รายได้หนัง</a>
           </li>
-          <li class="nav"><a href="#ticket" class="oneDown">TICKET</a></li>
-          <li class="nav"><a href="#seat" class="oneDown">SEAT</a></li>
-          <li class="nav"><a href="#about" class="oneDown">ABOUT US</a></li>
+          <li class="nav"><a href="#ticket" class="oneDown">ตั๋วชมภาพยนต์</a></li>
+          <li class="nav"><a href="#seat" class="oneDown">ประเภทที่นั่ง</a></li>
+          <li class="nav"><a href="#about" class="oneDown">เกี่ยวกับเรา</a></li>
         </ul>
       </div>
     </header>
@@ -75,28 +80,24 @@
     <section id="logo">
         <img src="img/02.png" alt="income" class="bg">
         <p class="logo_content">
-          NIGANGU is coined word made from Thai NANG and Japanese EIGA mean “movie”.
-  					<br>
-  					Also, GANGU means toy in Japanese.
-  					<br>
-  					<br>
-  					Movies is necessary entertainment for our life and culture.
-  					<br>
-  					<br>
-  					But it have BIG difference between Thai and Japanese especially fee.
-  					We compared and put together about difference of movie in this website.
-  					<br>
-  					<br>
-  					We hope you enjoy it...
-
+          <b>NIGANGU</b> เป็นคำที่สร้างขึ้นจากภาษาไทยคำว่า หนัง และ <b>EIGA</b> ภาษาญี่ปุ่นแปลว่า "ภาพยนตร์"
+  					นอกจากนี้ <b>GANGU</b> ในภาษาญี่ปุ่นหมายถึงของเล่น
+  					ภาพยนตร์ไม่แต่เป็นความบันเทิง <br><br>แต่ยังเป็นวัฒนธรรมที่จำเป็นต่อชีวิต
+  					แต่มันมีความแตกต่างใหญ่ระหว่างไทยและญี่ปุ่นโดยเฉพาะค่าธรรมเนียม เราได้เปรียบเทียบและรวบรวมเกี่ยวกับความแตกต่างของภาพยนตร์ในเว็บไซต์นี้
+  					เราหวังว่าคุณจะสนุกกับมัน
         </p>
+        <style media="screen">
+          #logo p{
+            transform: translateY(30%);
+          }
+        </style>
     </section>
 
     <section id="income">
       <img src="img/bg_webpage.png" class="bg">
 
       <h1><span class="solid">MOVIE </span>I<span class="solid">NCOME</span></h1>
-      <h2>&middot;</h2>
+      <h2 style="top: 17.015%; left: 49.55%;">&middot;</h2>
 
       <div class="wrapper">
         <div class="container" id="c0">
@@ -104,11 +105,11 @@
             <img src="img/01Money.png" class="card">
           </div>
           <div class="story" id="s0">
-            <p>Movie Income</p>
+            <p>รายได้หนัง</p>
             <div class="info">
               <div class="infoboxtop">
                 <div class="incomebox">
-                  <a href="#article_income" class="con-btn">more info</a>
+                  <a href="#article_income" class="con-btn">เพิ่มเติม</a>
                 </div>
               </div>
             </div>
@@ -121,11 +122,11 @@
             <img src="img/02Year-of-movie.png" class="card">
           </div>
           <div class="story" id="s1">
-            <p>Year</p>
+            <p>ปีที่ฉาย</p>
             <div class="info">
               <div class="infoboxtop">
                 <div class="incomebox">
-                  <a href="#article_year" class="con-btn2">more info</a>
+                  <a href="#article_year" class="con-btn2">เพิ่มเติม</a>
                 </div>
               </div>
             </div>
@@ -138,11 +139,11 @@
             <img src="img/03director.png" class="card">
           </div>
           <div class="story" id="s2">
-            <p>Director</p>
+            <p>ผู้กำกับ</p>
             <div class="info">
               <div class="infoboxtop">
                 <div class="incomebox">
-                  <a href="#article_director" class="con-btn">more info</a>
+                  <a href="#article_director" class="con-btn">เพิ่มเติม</a>
                 </div>
               </div>
             </div>
@@ -155,11 +156,11 @@
           </div>
 
           <div class="story" id="s3">
-            <p style="line-height: 1;">Distribution Company</p>
+            <p>บริษัทผู้ผลิต</p>
             <div class="info">
               <div class="infoboxtop">
                 <div class="incomebox">
-                  <a href="#article_company" class="con-btn2">more info</a>
+                  <a href="#article_company" class="con-btn2">เพิ่มเติม</a>
                 </div>
               </div>
             </div>
@@ -191,11 +192,11 @@
                                 <div class="content_inbox">
                                     <div class="tab_inside_content">
                                         <ul>
-                                            <li>Spirited Away</li>
-                                            <li>Your name?</li>
-                                            <li>Howl's Moving Castle</li>
-                                            <li>Princess Mononoke</li>
-                                            <li>BAYSIDE SHAKEDOWN 2</li>
+                                            <li>มิติวิญญาณมหัศจรรย์</li>
+                                            <li>หลับตาฝัน ถึงชื่อเธอ</li>
+                                            <li>ฮะอุรุ โนะ ยุโงะกุชิโระ</li>
+                                            <li>เจ้าหญิงจิตวิญญาณแห่งพงไพร</li>
+                                            <li>เบย์ไซด์แช็คดาวน์ทาวน์</li>
                                         </ul>
                                     </div>
                                     <div class="tab_inside_content">
@@ -214,11 +215,11 @@
                                 <div class="content_inbox">
                                     <div class="tab_inside_content">
                                         <ul>
-                                            <li>Bad Genius</li>
-                                            <li>Pee Mak Phra Khanong</li>
-                                            <li>I Fine Thank You Love You</li>
-                                            <li>Suriyothai</li>
-                                            <li>King Naresuan 2</li>
+                                            <li>ฉลาดเกมโกง</li>
+                                            <li>พี่มาก..พระโขนง</li>
+                                            <li>ไอ ฟาย แต๊งค์ กิ้ว เลิฟ ยู</li>
+                                            <li>สุริโยทัย</li>
+                                            <li>ตำนานสมเด็จพระนเศวรภาค 2</li>
                                         </ul>
                                     </div>
                                     <div class="tab_inside_content">
@@ -259,11 +260,11 @@
                                 <div class="content_inbox">
                                     <div class="tab_inside_content">
                                         <ul>
-                                            <li>Spirited Away</li>
-                                            <li>Your name?</li>
-                                            <li>Howl's Moving Castle</li>
-                                            <li>Princess Mononoke</li>
-                                            <li>BAYSIDE SHAKEDOWN 2</li>
+                                            <li>มิติวิญญาณมหัศจรรย์</li>
+                                            <li>หลับตาฝัน ถึงชื่อเธอ</li>
+                                            <li>ฮะอุรุ โนะ ยุโงะกุชิโระ</li>
+                                            <li>เจ้าหญิงจิตวิญญาณแห่งพงไพร</li>
+                                            <li>เบย์ไซด์แช็คดาวน์ทาวน์ 2</li>
                                         </ul>
                                     </div>
                                     <div class="tab_inside_content">
@@ -282,11 +283,11 @@
                                 <div class="content_inbox">
                                     <div class="tab_inside_content">
                                         <ul>
-                                            <li>Bad Genius</li>
-                                            <li>Pee Mak Phra Khanong</li>
-                                            <li>I Fine Thank You Love You</li>
-                                            <li>Suriyothai</li>
-                                            <li>King Naresuan 2</li>
+                                            <li>ฉลาดเกมโกง</li>
+                                            <li>พี่มาก..พระโขนง</li>
+                                            <li>ไอ ฟาย แต๊งค์ กิ้ว เลิฟ ยู</li>
+                                            <li>สุริโยทัย</li>
+                                            <li>ตำนานสมเด็จพระนเศวรภาค 2</li>
                                         </ul>
                                     </div>
                                     <div class="tab_inside_content">
@@ -327,11 +328,11 @@
                                 <div class="content_inbox">
                                     <div class="tab_inside_content">
                                         <ul>
-                                            <li>Spirited Away</li>
-                                            <li>Your name?</li>
-                                            <li>Howl's Moving Castle</li>
-                                            <li>Princess Mononoke</li>
-                                            <li>BAYSIDE SHAKEDOWN 2</li>
+                                            <li>มิติวิญญาณมหัศจรรย์</li>
+                                            <li>หลับตาฝัน ถึงชื่อเธอ</li>
+                                            <li>ฮะอุรุ โนะ ยุโงะกุชิโระ</li>
+                                            <li>เจ้าหญิงจิตวิญญาณแห่งพงไพร</li>
+                                            <li>เบย์ไซด์แช็คดาวน์ทาวน์ 2</li>
                                         </ul>
                                     </div>
                                     <div class="tab_inside_content">
@@ -350,11 +351,11 @@
                                 <div class="content_inbox">
                                     <div class="tab_inside_content">
                                         <ul>
-                                            <li>Bad Genius</li>
-                                            <li>Pee Mak Phra Khanong</li>
-                                            <li>I Fine Thank You Love You</li>
-                                            <li>Suriyothai</li>
-                                            <li>King Naresuan 2</li>
+                                            <li>ฉลาดเกมโกง</li>
+                                            <li>พี่มาก..พระโขนง</li>
+                                            <li>ไอ ฟาย แต๊งค์ กิ้ว เลิฟ ยู</li>
+                                            <li>สุริโยทัย</li>
+                                            <li>ตำนานสมเด็จพระนเศวรภาค 2</li>
                                         </ul>
                                     </div>
                                     <div class="tab_inside_content">
@@ -362,8 +363,8 @@
                                             <li>GDH</li>
                                             <li>GTH</li>
                                             <li>GTH</li>
-                                            <li>Sahamonkhol Film</li>
-                                            <li>Sahamonkhol Film</li>
+                                            <li>สหมงคลฟิล์ม</li>
+                                            <li>สหมงคลฟิล์ม</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -395,11 +396,11 @@
                                 <div class="content_inbox">
                                     <div class="tab_inside_content">
                                         <ul>
-                                            <li>Spirited Away</li>
-                                            <li>Your name?</li>
-                                            <li>Howl's Moving Castle</li>
-                                            <li>Princess Mononoke</li>
-                                            <li>BAYSIDE SHAKEDOWN 2</li>
+                                            <li>มิติวิญญาณมหัศจรรย์</li>
+                                            <li>หลับตาฝัน ถึงชื่อเธอ</li>
+                                            <li>ฮะอุรุ โนะ ยุโงะกุชิโระ</li>
+                                            <li>เจ้าหญิงจิตวิญญาณแห่งพงไพร</li>
+                                            <li>เบย์ไซด์แช็คดาวน์ทาวน์ 2</li>
                                         </ul>
                                     </div>
                                     <div class="tab_inside_content">
@@ -418,20 +419,20 @@
                                 <div class="content_inbox">
                                     <div class="tab_inside_content">
                                         <ul>
-                                            <li>Bad Genius</li>
-                                            <li>Pee Mak Phra Khanong</li>
-                                            <li>I Fine Thank You Love You</li>
-                                            <li>Suriyothai</li>
-                                            <li>King Naresuan 2</li>
+                                            <li>ฉลาดเกมโกง</li>
+                                            <li>พี่มาก..พระโขนง</li>
+                                            <li>ไอ ฟาย แต๊งค์ กิ้ว เลิฟ ยู</li>
+                                            <li>สุริโยทัย</li>
+                                            <li>ตำนานสมเด็จพระนเศวรภาค 2</li>
                                         </ul>
                                     </div>
                                     <div class="tab_inside_content">
                                         <ul>
-                                            <li>Nattawut Poonpiriya</li>
-                                            <li>Banjong Pisanthanakun</li>
-                                            <li>Mez Tharatorn</li>
-                                            <li>H.S.H. Chatrichalerm Yukol</li>
-                                            <li>H.S.H. Chatrichalerm Yukol</li>
+                                            <li>นัฐวุฒิ พูนพิริยะ</li>
+                                            <li>บรรจง ปิสัญธนะกูล</li>
+                                            <li>เมษ ธราธร</li>
+                                            <li>หม่อมเจ้าชาตรีเฉลิม ยุคล</li>
+                                            <li>หม่อมเจ้าชาตรีเฉลิม ยุคล</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -464,16 +465,16 @@
   				<div class="text2">
   					<div class="left">
   						<p class="text_mini">
-  							Price for 9 most popular hamburgers.
+  							ราคานี้ซื้อแฮมเบอร์เกอร์ได้ 9 ชิ้น
   						</p>
   					</div>
   					<div class="right">
   						<p class="text_mini">
-  							price for only 1 hamburgers.
+  							ราคานี้ซื้อเบอร์เกอร์ได้ 1 ชิ้น.
   						</p>
   					</div>
   				</div>
-  				<h1 class="foot">Ticket Price</h1>
+  				<h1 class="foot">ราคาตั๋ว</h1>
   			</div>
 
   			<div class="box">
@@ -481,40 +482,40 @@
   				<div class="text">
   					<div class="left">
   						<p class="text_mini">
-  							Movie day<br><span class="dallar">$</span>9.24
+  							วันดูหนัง<br><span class="dallar">$</span>9.24
   						</p>
   					</div>
   					<div class="right">
   						<p class="text_mini">
-  							Wednessday<br><span class="dallar">$</span>3.29
+  							วันพุธ<br><span class="dallar">$</span>3.29
   						</p>
   					</div>
   				</div>
   				<div class="text2">
   					<div class="left">
   						<p class="text_mini">
-  							1st day of every month <span class="dallar">$</span>11.10
+  							ันที่ 1 ของทุกๆเดือน <span class="dallar">$</span>11.10
   						</p>
   					</div>
   					<div class="right">
   						<p class="text_mini">
-  							Mother day, mother is free!
+  							วันแม่ <br>แม่ดูฟรี
   						</p>
   					</div>
   				</div>
-  				<h1 class="foot">Discount</h1>
+  				<h1 class="foot">ส่วนลด</h1>
   			</div>
   			<div class="box">
   				<img src="img/ticket3.png" alt="ticket3">
   				<div class="text">
   					<div class="left">
   						<p class="text_mini">
-                Student show student ID card.
+                แสดงบัตรนักเรียน.
   						</p>
   					</div>
   					<div class="right">
   						<p class="text_mini">
-                Student register for membership.
+                นักเรียนที่สมัครสมาชิก
   						</p>
   					</div>
   				</div>
@@ -530,7 +531,7 @@
   						</p>
   					</div>
   				</div>
-  				<h1 class="foot">Students Discount</h1>
+  				<h1 class="foot">ส่วนลดนักเรียน</h1>
   			</div>
   		  </article>
   	</section>
@@ -578,7 +579,7 @@
               <div class="icon">
                   <i class="fas fa-graduation-cap left"></i>
                   <div class="right">
-                    <h4>University</h4>
+                    <h4>มหาวิทยาลัย</h4>
                     <h3>HIU</h3>
                   </div>
               </div>
@@ -587,7 +588,7 @@
               <div class="icon">
                   <i class="fas fa-envelope left"></i>
                   <div class="right">
-                    <h4>Email</h4>
+                    <h4>อีเมล</h4>
                     <h3>s1611010@s.do-johodai.ac.jp</h3>
                   </div>
               </div>
@@ -605,7 +606,7 @@
               <div class="icon">
                   <i class="fas fa-graduation-cap left"></i>
                   <div class="right">
-                    <h4>University</h4>
+                    <h4>มหาวิทยาลัย</h4>
                     <h3>RMUTT</h3>
                   </div>
               </div>
@@ -614,7 +615,7 @@
               <div class="icon">
                   <i class="fas fa-envelope left"></i>
                   <div class="right">
-                    <h4>Email</h4>
+                    <h4>อีเมล</h4>
                     <h3>siwakorn.rassamee@gmail.com</h3>
                   </div>
               </div>
@@ -632,7 +633,7 @@
               <div class="icon">
                   <i class="fas fa-graduation-cap left"></i>
                   <div class="right">
-                    <h4>University</h4>
+                    <h4>มหาวิทยาลัย</h4>
                     <h3>RMUTT</h3>
                   </div>
               </div>
@@ -641,7 +642,7 @@
               <div class="icon">
                   <i class="fas fa-envelope left"></i>
                   <div class="right">
-                    <h4>Email</h4>
+                    <h4>อีเมล</h4>
                     <h3>Akkaravin.sriumphan@gmail.com</h3>
                   </div>
               </div>
@@ -659,7 +660,7 @@
               <div class="icon">
                   <i class="fas fa-graduation-cap left"></i>
                   <div class="right">
-                    <h4>University</h4>
+                    <h4>มหาวิทยาลัย</h4>
                     <h3>HIU</h3>
                   </div>
               </div>
@@ -668,7 +669,7 @@
               <div class="icon">
                   <i class="fas fa-envelope left"></i>
                   <div class="right">
-                    <h4>Email</h4>
+                    <h4>อีเมล</h4>
                     <h3>s1821094@s.do-johodai@ac.jp</h3>
                   </div>
               </div>

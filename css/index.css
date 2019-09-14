@@ -181,6 +181,10 @@ section{
     display: none;
   }
 
+  #navigation .right{
+    display: none;
+  }
+
   #navigation_hum{
     display: block;
     height: 8vh;
@@ -296,6 +300,7 @@ section{
     position: absolute;
     left: 4%;
     top: 45%;
+    text-align: justify;
 }
 
 /*INCOME*/
