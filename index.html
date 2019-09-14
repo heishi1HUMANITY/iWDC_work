@@ -30,11 +30,11 @@
 
       <div class="right">
         <ul class="navMaster">
-          <li class="nav hover"><a href="#" class="oneDown">INCOME</a>
+          <li class="nav hover"><a href="#article_income" class="oneDown">INCOME</a>
             <ul>
-              <li class="hoverChild"><a href="#" class="childlen">YEAR</a></li>
-              <li class="hoverChild"><a href="#" class="childlen">DIRECTOR</a></li>
-              <li class="hoverChild"><a href="#" class="childlen">COMPANY</a></li>
+              <li class="hoverChild"><a href="#article_year" class="childlen">YEAR</a></li>
+              <li class="hoverChild"><a href="#article_director" class="childlen">DIRECTOR</a></li>
+              <li class="hoverChild"><a href="#article_company" class="childlen">COMPANY</a></li>
             </ul>
           </li>
           <li class="nav"><a href="#ticket" class="oneDown">TICKET</a></li>
@@ -54,13 +54,14 @@
 
     <header id="navigation_hum">
       <input type="checkbox" name="header_hum" id="header_hum_radio"><label for="header_hum_radio" class="header_radio"><img src="img/menu.svg" alt=""></label>
-      <div class="header_hum_coHIUt">
-          <ul>
-            <li>INCOME</li>
-            <li>TICKET</li>
-            <li>SEAT</li>
-            <li>ABOUT US</li>
-          </ul>
+      <div class="header_hum_content">
+        <ul class="navMaster">
+          <li class="nav hover"><a href="#income" class="oneDown">INCOME</a>
+          </li>
+          <li class="nav"><a href="#ticket" class="oneDown">TICKET</a></li>
+          <li class="nav"><a href="#seat" class="oneDown">SEAT</a></li>
+          <li class="nav"><a href="#about" class="oneDown">ABOUT US</a></li>
+        </ul>
       </div>
     </header>
 
@@ -107,7 +108,7 @@
             <div class="info">
               <div class="infoboxtop">
                 <div class="incomebox">
-                  <a href="#" class="con-btn">more info</a>
+                  <a href="#article_income" class="con-btn">more info</a>
                 </div>
               </div>
             </div>
@@ -172,9 +173,9 @@
 
     <section id="income_article">
         <ul class="slider">
-            <li id="article_income">
+            <li>
 
-                <div class="slider_inbox">
+                <div class="slider_inbox" id="article_income">
                     <div class="left">
                         <img src="img/Movie-income-Expand-01.png" alt="">
                     </div>
@@ -240,9 +241,9 @@
 
             </li>
 
-            <li id="article_year">
+            <li>
 
-                <div class="slider_inbox">
+                <div class="slider_inbox"  id="article_year">
                     <div class="left">
                         <img src="img/Movie-income-Expand-02.png" alt="">
                     </div>
@@ -310,7 +311,7 @@
 
             <li id="article_director">
 
-                <div class="slider_inbox">
+                <div class="slider_inbox"  id="article_director">
                     <div class="left">
                         <img src="img/Movie-income-Expand-03.png" alt="">
                     </div>
@@ -376,9 +377,9 @@
 
             </li>
 
-            <li id="article_company">
+            <li>
 
-                <div class="slider_inbox">
+                <div class="slider_inbox"  id="article_company">
                     <div class="left">
                         <img src="img/Movie-income-Expand-04.png" alt="">
                     </div>
