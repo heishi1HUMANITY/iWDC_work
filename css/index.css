@@ -1,6 +1,7 @@
 @charset "UTF-8";
 html{
   font-family: 'Catamaran', sans-serif;
+  background: #2B2D42;
 }
 
 body::-webkit-scrollbar{
@@ -41,6 +42,11 @@ section{
 
 #ticket .dallar:not(.without_dallar){
   font-size: calc(100vw/90);
+}
+
+#between{
+    height: 0;
+    width: 0;
 }
 
 /*HEADER*/
@@ -206,6 +212,7 @@ section{
     line-height: 0;
     z-index: 9999;
     position: fixed;
+    top: 0;
     max-height: 30px;
   }
 
@@ -250,7 +257,13 @@ section{
     height: 110px;
   }
 
+  #between{
+      height: 8vh;
+      max-height: 30px
+  }
+
 }
+
 
 /*TOP*/
 #top{
@@ -592,7 +605,7 @@ section{
     transform: translate(-50%,-50%);
     width:100%;
 }
-@media screen and (max-width: 910px){
+@media screen and (max-width: 520px){
     #income_article .slider .slider_inbox{
         flex-direction: column;
     }
@@ -853,7 +866,7 @@ input[type="radio"] {
     height: 80%;
     width: 60%;
     background: #fff;
-    padding: 40px;
+    padding: 10%;
     box-sizing: border-box;
     top: 50%;
     left: 250%;
@@ -878,7 +891,8 @@ input[type="radio"] {
   top: 37%;
 }
 #about .screen:hover .moredown{
-  top: 40%;
+    white-space: nowrap;
+    top: 45%;
 }
 #about .screen .content h2{
     margin: 0;
@@ -906,6 +920,7 @@ input[type="radio"] {
 }
 #about .screen .content .about_box_top{
   margin-top: 40%;
+  margin-bottom: 10%;
 }
 .content .box .icon h3,
 .content .box .icon h4{
@@ -924,7 +939,14 @@ input[type="radio"] {
     align-items: center;
 }
 .content .box .icon h3{
-  font-size: calc(100vw/100);
+  font-size: calc(100vw / 120);
+}
+@media screen and (max-width: 1060px){
+    .content .box .icon h3{
+        word-break: break-all;
+        white-space: normal;
+        line-height: 0.8;
+    }
 }
 .content .box .left:hover ~ .right h3,
 .content .box .left:hover ~ .right h4{
@@ -932,7 +954,6 @@ input[type="radio"] {
 }
 .content .box .icon h4{
     font-weight: 600;
-    margin: 5px 0;
 }
 .content .box .icon .right h3::before,
 .content .box .icon .right h4::before{
