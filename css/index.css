@@ -592,6 +592,23 @@ section{
     transform: translate(-50%,-50%);
     width:100%;
 }
+@media screen and (max-width: 910px){
+    #income_article .slider .slider_inbox{
+        flex-direction: column;
+    }
+    #income_article .slider .slider_inbox .right{
+        width: 100%;
+    }
+
+    #income_article .slider .slider_inbox .left{
+        width: 100%;
+    }
+
+    #income_article .slider .slider_inbox .left img{
+        width: 50%;
+        height: auto;
+    }
+}
 
 
 /* yuki*yuki */
