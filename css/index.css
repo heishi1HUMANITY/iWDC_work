@@ -1079,7 +1079,6 @@ footer .footer_bottom{
 #ticket .ticket{
   display: flex;
   width: 100%;
-  padding: 0 5px;
   position: absolute;
   top: 55%;
   left: 50%;
